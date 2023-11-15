@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
-
 import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:flutter/services.dart';
@@ -51,15 +49,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Divider(),
-            SizedBox(
+            const Divider(),
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
               onPressed: _checkBiometric,
-              child: Text("Check for Biometric"),
+              child: const Text("Check for Biometric"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -67,18 +65,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(
                   color: _canCheckBiometric ? Colors.green : Colors.red),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Divider(),
-            SizedBox(
+            const Divider(),
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
               onPressed: _getListOfBiometricTypes,
-              child: Text("List Biometrics available"),
+              child: const Text("List Biometrics available"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -87,21 +85,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 "List of available biometrics ${_availableTypes.toString()}",
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Divider(),
-            SizedBox(
+            const Divider(),
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "Click here to authorize now",
             ),
             ElevatedButton(
               onPressed: _authorizeNow,
-              child: Text("Authorize Now"),
+              child: const Text("Authorize Now"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -111,14 +109,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ? Colors.green
                       : Colors.red),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Divider(),
-            SizedBox(
+            const Divider(),
+            const SizedBox(
               height: 100,
             ),
-            Text(
+            const Text(
               "made by sapatevaibhav 🧡",
               style: TextStyle(fontSize: 10),
             )
